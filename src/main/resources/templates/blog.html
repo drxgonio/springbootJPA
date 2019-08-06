@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Xin chao</title>
+</head>
+<body>
+   <table>
+       <tr th:each ="a:${blog}">
+           <td th:utext="${a.id}">...</td>
+           <td th:utext="${a.name}">...</td>
+
+       </tr>
+   </table>
+</body>
+</html>
